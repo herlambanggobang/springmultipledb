@@ -1,8 +1,8 @@
-package youtube.java.puzzle.model;
+package com.multiple.db.model;
 
+import com.multiple.db.ibdb.entity.Student;
+import com.multiple.db.omni.entity.College;
 import lombok.Data;
-import youtube.java.puzzle.omni.entity.College;
-import youtube.java.puzzle.ibdb.entity.Student;
 
 import java.util.List;
 

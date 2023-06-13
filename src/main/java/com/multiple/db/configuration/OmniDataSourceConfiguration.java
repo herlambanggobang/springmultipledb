@@ -1,4 +1,4 @@
-package youtube.java.puzzle.configuration;
+package com.multiple.db.configuration;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "youtube.java.puzzle.omni.repository",
+@EnableJpaRepositories(basePackages = "com.multiple.db.omni.repository",
         entityManagerFactoryRef = "omniEntityManagerFactory",
         transactionManagerRef = "omniTransactionManager")
 public class OmniDataSourceConfiguration {
@@ -39,7 +39,7 @@ public class OmniDataSourceConfiguration {
             EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(omniDataSource())
-                .packages("youtube.java.puzzle.omni.entity")
+                .packages("com.multiple.db.omni.entity")
                 .build();
     }
 

@@ -1,4 +1,4 @@
-package youtube.java.puzzle.omni.entity;
+package com.multiple.db.omni.entity;
 
 import lombok.Data;
 

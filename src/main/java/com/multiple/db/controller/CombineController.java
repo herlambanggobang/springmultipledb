@@ -1,11 +1,11 @@
-package youtube.java.puzzle.controller;
+package com.multiple.db.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import youtube.java.puzzle.omni.repository.CollegeRepository;
-import youtube.java.puzzle.model.Response;
-import youtube.java.puzzle.ibdb.repository.StudentRepository;
+import com.multiple.db.omni.repository.CollegeRepository;
+import com.multiple.db.model.Response;
+import com.multiple.db.ibdb.repository.StudentRepository;
 
 @RestController
 public class CombineController {

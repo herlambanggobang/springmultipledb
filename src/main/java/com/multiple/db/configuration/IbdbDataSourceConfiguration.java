@@ -1,4 +1,4 @@
-package youtube.java.puzzle.configuration;
+package com.multiple.db.configuration;
 
 import javax.sql.DataSource;
 
@@ -19,7 +19,7 @@ import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "youtube.java.puzzle.ibdb.repository",
+@EnableJpaRepositories(basePackages = "com.multiple.db.ibdb.repository",
         entityManagerFactoryRef = "ibdbEntityManagerFactory",
         transactionManagerRef = "ibdbTransactionManager")
 public class IbdbDataSourceConfiguration {
@@ -44,7 +44,7 @@ public class IbdbDataSourceConfiguration {
             EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(ibdbDataSource())
-                .packages("youtube.java.puzzle.ibdb.entity")
+                .packages("com.multiple.db.ibdb.entity")
                 .build();
     }
 

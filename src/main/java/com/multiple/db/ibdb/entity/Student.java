@@ -1,4 +1,4 @@
-package youtube.java.puzzle.ibdb.entity;
+package com.multiple.db.ibdb.entity;
 
 import lombok.Data;
 
